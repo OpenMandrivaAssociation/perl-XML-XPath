@@ -1,6 +1,6 @@
 %define module 	XML-XPath
 %define version 1.13
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary:	XML::XPath - a set of modules for parsing and evaluating XPath statements
 Name: 		perl-%{module}
@@ -36,6 +36,7 @@ beyond XPath.
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %{__make}
 
+%check
 make test
 
 %install
