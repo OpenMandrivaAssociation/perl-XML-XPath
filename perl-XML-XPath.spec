@@ -18,7 +18,6 @@ Requires:	perl-XML-Parser
 Requires:	perl-XML-XSLT
 Requires:	perl-XML-Grove
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This module aims to comply exactly to the XPath specification 
