@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:	XML::XPath - a set of modules for parsing and evaluating XPath statements
 License: 	GPL+ or Artistic
@@ -13,13 +13,11 @@ Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/%{upstream_name}-
 # (oe) http://rt.cpan.org/NoAuth/Bug.html?id=6363
 Patch0:		XML-XPath-1.13-bug6363.diff
 
-BuildRequires:	perl-XML-Parser
+BuildRequires:	perl(XML::Parser)
+
 BuildArch:	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
-Requires:	perl-XML-Parser
-Requires:	perl-XML-XSLT
-Requires:	perl-XML-Grove
 
 %description
 This module aims to comply exactly to the XPath specification 
@@ -34,10 +32,10 @@ beyond XPath.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%{__make}
+%make
 
 %check
-make test
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
