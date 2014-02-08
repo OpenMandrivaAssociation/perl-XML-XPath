@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	7
+Release:	8
 
 Summary:	XML::XPath - a set of modules for parsing and evaluating XPath statements
 License:	GPL+ or Artistic
