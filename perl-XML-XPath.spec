@@ -12,6 +12,8 @@ Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/%{modname}-%{modv
 # (oe) http://rt.cpan.org/NoAuth/Bug.html?id=6363
 Patch0:		XML-XPath-1.13-bug6363.diff
 BuildArch:	noarch
+BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
 
