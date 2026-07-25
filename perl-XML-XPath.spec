@@ -1,14 +1,14 @@
 %define modname	XML-XPath
-%define modver	1.13
+%define modver	1.49
 
 Summary:	XML::XPath - a set of modules for parsing and evaluating XPath statements
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	18
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://sergeant.org
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/%{modname}-%{modver}.tar.bz2
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MANWAR/XML-XPath-%{modver}.tar.gz
 # (oe) http://rt.cpan.org/NoAuth/Bug.html?id=6363
 Patch0:		XML-XPath-1.13-bug6363.diff
 BuildArch:	noarch
