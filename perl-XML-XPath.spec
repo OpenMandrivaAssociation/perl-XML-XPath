@@ -4,7 +4,7 @@
 Summary:	XML::XPath - a set of modules for parsing and evaluating XPath statements
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://sergeant.org
@@ -27,7 +27,7 @@ beyond XPath.
 
 %prep
 %setup -qn %{modname}-%{modver}
-%autopatch -p1
+
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
