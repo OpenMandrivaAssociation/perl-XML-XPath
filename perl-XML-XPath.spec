@@ -4,7 +4,7 @@
 Summary:	XML::XPath - a set of modules for parsing and evaluating XPath statements
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://sergeant.org
@@ -17,6 +17,7 @@ BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
+BuildRequires:	perl(Path::Tiny)
 
 %description
 This module aims to comply exactly to the XPath specification 
@@ -34,7 +35,7 @@ beyond XPath.
 %make
 
 %check
-%make test || :
+-make test
 
 %install
 %makeinstall_std
@@ -43,5 +44,6 @@ beyond XPath.
 %doc README TODO examples
 %{_bindir}/*
 %{perl_vendorlib}/XML/*
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 
