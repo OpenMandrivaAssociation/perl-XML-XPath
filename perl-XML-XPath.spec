@@ -1,3 +1,5 @@
+%global __requires_exclude ^perl\\(-norequire\\)$
+
 %define modname	XML-XPath
 %define modver	1.49
 
